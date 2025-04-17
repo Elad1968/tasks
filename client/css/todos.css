@@ -1,0 +1,110 @@
+body {
+
+}
+#todos {
+    min-width: 50rem;
+    max-height: 100vh;
+    min-height: 37.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+#todos > * {
+    width: 100%;
+}
+
+#todos > h1 {
+    text-align: center;
+}
+
+#todos > h6 {
+    text-align: center;
+}
+
+#todos > hr {
+    margin: unset;
+    opacity: unset;
+}
+
+#list {
+    flex-grow: 1;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.todo > * {
+    margin: auto 0;
+}
+
+.todo > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.todo > .spacer {
+    flex-grow: 1;
+}
+
+#inserter {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#controls > * {
+    flex-grow: 1;
+}
+
+#loading {
+    max-width: 64px;
+    max-height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+    flex-grow: 1;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+@media (max-height: 37.5rem) {
+    #todos {
+        min-height: unset;
+        max-height: unset;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 50rem) {
+    #todos {
+        max-width: unset;
+        min-width: unset;
+        width: 100vw;
+        border-radius: 0;
+    }
+}

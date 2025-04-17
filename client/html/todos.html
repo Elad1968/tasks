@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/todos.css"/>
+    <link rel="icon" href="/assets/images/favicon.png"/>
+    <script src="/js/client.js"></script>
+    <script src="/js/todos.js"></script>
+</head>
+<body>
+    <div id="todos" class="frosted">
+        <h1>To Do List</h1>
+        <h6 id="welcome"></h6>
+        <hr/>
+        <div id="list" hidden="hidden">
+            <div id="inserter">
+                <input type="text" class="form-control" placeholder="Task" id="insert-description">
+                <a class="btn btn-primary" id="insert">Insert</a>
+            </div>
+        </div>
+        <span id="error" hidden="hidden"></span>
+        <img src="/assets/images/loading.gif" id="loading"/>
+        <div id="controls">
+            <button class="btn btn-success" id="save">Save</button>
+            <button class="btn btn-danger" id="logout">Logout</button>
+        </div>
+    </div>
+</body>
+</html>
